@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Sales Lead</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Create New Sales Lead</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Contacts.html">Contacts</a></li>
+            <li><a href="Sales.html">Sales</a></li>
+            <li><a href="Tasks.html">Tasks</a></li>
+            <li><a href="Support.html">Support</a></li>
+        </ul>
+    </nav>
+   
+    <section class="add-lead-form">
+        <h2 class="add">Create New Sales Lead</h2>
+        <form action="/leads/add" method="POST">
+            <label for="lead-name">Lead Name:</label>
+            <input type="text" id="lead-name" name="lead-name" required>
+            
+            <label for="lead-company">Company:</label>
+            <input type="text" id="lead-company" name="lead-company" required>
+            
+            <label for="lead-phone">Phone:</label>
+            <input type="tel" id="lead-phone" name="lead-phone" required>
+            
+            <button type="submit">Create Lead</button><br>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Nikita Ch. All rights reserved.</p>
+    </footer>
+</body>
+</html>

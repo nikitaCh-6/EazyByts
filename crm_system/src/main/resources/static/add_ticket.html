@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open New Support Ticket</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Open New Support Ticket</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Contacts.html">Contacts</a></li>
+            <li><a href="Sales.html">Sales</a></li>
+            <li><a href="Tasks.html">Tasks</a></li>
+            <li><a href="Support.html">Support</a></li>
+        </ul>
+    </nav>
+   
+    <section class="open-ticket-form">
+        <h2 class="add">Open New Support Ticket</h2>
+        <form action="/tickets/add" method="POST">
+            <label for="ticket-subject">Subject:</label>
+            <input type="text" id="ticket-subject" name="ticket-subject" required>
+            
+            <label for="ticket-description">Description:</label>
+            <textarea id="ticket-description" name="ticket-description" rows="4" required></textarea>
+            
+            <label for="ticket-priority">Priority:</label>
+            <select id="ticket-priority" name="ticket-priority" required>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+            
+            <button type="submit">Open Ticket</button><br>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Nikita Ch. All rights reserved.</p>
+    </footer>
+</body>
+</html>

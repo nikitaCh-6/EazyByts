@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Add New Contact</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Contacts.html">Contacts</a></li>
+            <li><a href="Sales.html">Sales</a></li>
+            <li><a href="Tasks.html">Tasks</a></li>
+            <li><a href="Support.html">Support</a></li>
+        </ul>
+    </nav>
+   
+    <section class="add-contact-form">
+        <h2 class="add">Add New Contact</h2>
+        <form action="/contacts/add" method="POST">
+            <label for="contact-name">Name:</label>
+            <input type="text" id="contact-name" name="contact-name" required>
+            
+            <label for="contact-email">Email:</label>
+            <input type="email" id="contact-email" name="contact-email" required>
+            
+            <label for="contact-phone">Phone:</label>
+            <input type="tel" id="contact-phone" name="contact-phone" required>
+            
+            <button type="submit">Add Contact</button><br>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Nikita Ch. All rights reserved.</p>
+    </footer>
+</body>
+</html>
